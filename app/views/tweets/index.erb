@@ -1,0 +1,7 @@
+<h1> Welcome, <%=Helper.current_user(session).username%></h1>
+
+ <% @tweets.each do |t| %>
+  <p> <%= t.content %> </p>
+<% end %>
+
+ <a href="/tweets/new"> Add Tweet </a>
